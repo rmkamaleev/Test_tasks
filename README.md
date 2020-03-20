@@ -1,2 +1,2 @@
-# Solving different web-developer test task
+# Solving web-developer test tasks
 
