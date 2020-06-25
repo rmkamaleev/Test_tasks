@@ -1,0 +1,32 @@
+h1 {
+  margin-top: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: #ff6666
+}
+
+#update_tokens {
+  margin-left: calc(50% + 5rem);
+}
+
+#formID label{
+  font-size: 1.2rem;
+}
+
+#formID input{
+  font-size: 1.1rem!important;
+  color: #212529!important;
+}
+
+#formID {
+  margin-bottom: 1.5rem;
+}
+
+.data_fill {
+  width: 30rem;
+  margin-left: calc(50% - 15rem);
+  margin-top: 3%;
+}
