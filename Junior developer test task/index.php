@@ -23,8 +23,8 @@
         <input type="text" name="Company" class="form-control" required>
       </div>
       <div class="custom-control custom-checkbox mb-3">
-        <input name='Oferta' type='hidden' value='false'>
-        <input type="checkbox" class="custom-control-input" name="Oferta" value="true" id="Oferta">
+        <input name='Oferta' type='hidden' value='0'>
+        <input type="checkbox" class="custom-control-input" name="Oferta" value="1" id="Oferta">
         <label class="custom-control-label" for="Oferta">Согласие с правилами оферты</label>
       </div>
       <div class="form-group">
@@ -56,8 +56,8 @@
         <input type="text" name="utm_term" class="form-control" readonly>
       </div>
       <div class="custom-control custom-checkbox mb-3">
-        <input name='MailAgree' type='hidden' value='false'>
-        <input type="checkbox" class="custom-control-input" name="MailAgree" value="true" id="MailAgree">
+        <input name='MailAgree' type='hidden' value='0'>
+        <input type="checkbox" class="custom-control-input" name="MailAgree" value="1" id="MailAgree">
         <label class="custom-control-label" for="MailAgree">Согласие на получение писем</label>
       </div>
       <div class="form-group">
