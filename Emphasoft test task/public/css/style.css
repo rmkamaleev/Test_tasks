@@ -1,0 +1,33 @@
+body {
+  background-color: #f2f2f2
+}
+
+header .container-fluid {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+  font-size: 24px;
+  background-color: #3f1551;
+  color: #ffffff;
+  text-align: center;
+}
+
+main .row {
+  margin-top: 100px;
+}
+
+main button {
+  background-color: #3f1551!important;
+  border: 2px solid #3f1551!important;
+  /* font-size: 20px!important; */
+}
+
+main button:hover{
+  border: 2px solid #5f1f7a!important;
+  background-color: #5f1f7a!important;
+}
+
+main button:focus{
+  border-color: #000000!important;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6) !important;
+}
