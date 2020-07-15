@@ -26,7 +26,7 @@ function set_info() {
 // Функция для получения имени пользователя и его друзей
 function set_params(us_name, friends, acc_token) {
   let url_1 = "https://api.vk.com/method/users.get?v=5.52&access_token=" + acc_token;
-  let url_2 = "https://api.vk.com/method/friends.get?v=5.52&access_token=" + acc_token + "&count=5&fields=first_name"
+  let url_2 = "https://api.vk.com/method/friends.get?v=5.52&access_token=" + acc_token + "&order=random&count=5&fields=first_name&fields=deactivated"
 
   $.ajax({ // AJAX запрос для получения имени авторизованного пользователя
     url: url_1,
@@ -43,8 +43,10 @@ function set_params(us_name, friends, acc_token) {
     dataType: "JSONP",
     success: function (res) {
       let list_friends = [];
-      for (let people of res.response.items)
-        list_friends.push(people.first_name + ' ' + people.last_name);
+      for (let people of res.response.items){
+        if (people.deactivated != 'deleted' && people.deactivated != 'banned')
+          list_friends.push(people.first_name + ' ' + people.last_name);
+      }
       friends.innerHTML += list_friends.join(', ');
     }
   })
